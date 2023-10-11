@@ -1,16 +1,26 @@
+import FirstBlock from './TitleBlock/FirstBlock';
+import ServiceBlock from './ServicesBlock/ServiceBlock';
+import QualityBlock from './QualityBlock/QualityBlock';
+import data from '../data/data.json';
+import Projects from './Projects/Projects';
+import Contacts from './Contacts/Contacts';
+import FAQBlock from './FAQ/FAQBlock';
+import Social from './Social/Social';
+import LeadMagnetWidget from './LeadMagnetWidget/LeadMagnetWidget';
+import BriefFormBlock from './Brief/Brief';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <main>
+      <FirstBlock />
+      <LeadMagnetWidget />
+      <QualityBlock />
+      <ServiceBlock data={data} />
+      <Projects />
+      <Contacts />
+      <BriefFormBlock />
+      <FAQBlock />
+      <Social />
+    </main>
   );
 };
