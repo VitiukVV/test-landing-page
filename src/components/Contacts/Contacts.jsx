@@ -10,7 +10,7 @@ const Contacts = () => {
   const formSubmitHandler = (name, number, email, text) => {
     setFeedback({ name, number, email, text });
   };
-
+  console.log(feedback);
   return (
     <SectionStyled>
       <Container>
