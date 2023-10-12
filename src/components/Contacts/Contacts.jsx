@@ -5,7 +5,7 @@ import ContactForm from './ContactForm';
 import { useLocalStorage } from 'components/helpers/useLocalStorage';
 
 const Contacts = () => {
-  const [setFeedback] = useLocalStorage('feedback');
+  const [feedback, setFeedback] = useLocalStorage('feedback');
 
   const formSubmitHandler = (name, number, email, text) => {
     setFeedback({ name, number, email, text });
